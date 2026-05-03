@@ -7,35 +7,51 @@
 <body>
 
 <script>
-let age = 15;
-console.log(age);
+let celsius = 25;
+let fahrenheit = celsius * 9 / 5 + 32;
+console.log(fahrenheit);
 
-let name = "Nikita";
-console.log(name);
+let daysInMonth = 30;
+let hoursInMonth = daysInMonth * 24;
+let minutesInMonth = hoursInMonth * 60;
+console.log(hoursInMonth);
+console.log(minutesInMonth);
 
-let isStudent = true;
-console.log(isStudent);
+let health = 100;
+let energy = 80;
+health = health - 20;
+energy = energy - 30;
+console.log(health);
+console.log(energy);
 
-let myString = "Не біжи вперед потяга";
-console.log(myString);
+let totalPrice = 500;
+let discount = 0.1;
+let discountedPrice = totalPrice * (1 - discount);
+console.log(discountedPrice);
 
-let myNumber = 13;
-myNumber = myNumber + 10;
-console.log(myNumber);
+const floatNumber = 12.78;
+let roundedDown = Math.floor(floatNumber);
+console.log(roundedDown);
 
-let myNull = null;
-console.log(myNull);
+const floatString = "45.67";
+let parsedFloat = parseFloat(floatString);
+console.log(parsedFloat);
 
-let userName = prompt("Введіть своє ім’я");
-alert("Привіт, " + userName);
-console.log(typeof userName);
+const intString = "123";
+let parsedInt = parseInt(intString);
+console.log(parsedInt);
 
-let userAnswer = confirm("Ви дійсно хочете покинути сторінку?");
-console.log(userAnswer);
+let number = 49;
+let sqrtNumber = Math.sqrt(number);
+console.log(sqrtNumber);
 
-alert("Увага! Дія може бути небезпечною.");
-let dangerConfirm = confirm("Ви впевнені, що хочете продовжити?");
-console.log(dangerConfirm);
+const integer = 42;
+const stringNumber = "256";
+let convertedInt = parseInt(stringNumber);
+console.log(convertedInt);
+
+let convertedString = integer.toString();
+console.log(convertedString);
 </script>
 
 </body>
