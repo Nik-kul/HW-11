@@ -7,51 +7,32 @@
 <body>
 
 <script>
-let celsius = 25;
-let fahrenheit = celsius * 9 / 5 + 32;
-console.log(fahrenheit);
+// 1
+let result = 5 + 5 + '5';
 
-let daysInMonth = 30;
-let hoursInMonth = daysInMonth * 24;
-let minutesInMonth = hoursInMonth * 60;
-console.log(hoursInMonth);
-console.log(minutesInMonth);
+console.log(result);
+console.log(typeof result);
 
-let health = 100;
-let energy = 80;
-health = health - 20;
-energy = energy - 30;
-console.log(health);
-console.log(energy);
+// 2
+let email = 'nikitoskul17@gmail.com';
 
-let totalPrice = 500;
-let discount = 0.1;
-let discountedPrice = totalPrice * (1 - discount);
-console.log(discountedPrice);
+console.log(email.includes('@'));
+console.log(email.length);
 
-const floatNumber = 12.78;
-let roundedDown = Math.floor(floatNumber);
-console.log(roundedDown);
+// 3
+let firstWord = 'My';
+let secondWord = 'name';
+let thirdWord = 'is';
 
-const floatString = "45.67";
-let parsedFloat = parseFloat(floatString);
-console.log(parsedFloat);
+let fullName = firstWord + ' ' + secondWord + ' ' + thirdWord + ' Viktor';
 
-const intString = "123";
-let parsedInt = parseInt(intString);
-console.log(parsedInt);
+console.log(fullName);
 
-let number = 49;
-let sqrtNumber = Math.sqrt(number);
-console.log(sqrtNumber);
+// 4
+let userName = 'Олександро';
+let payment = 300;
 
-const integer = 42;
-const stringNumber = "256";
-let convertedInt = parseInt(stringNumber);
-console.log(convertedInt);
-
-let convertedString = integer.toString();
-console.log(convertedString);
+alert(`Дякуємо, ${userName}! До сплати ${payment} гривень`);
 </script>
 
 </body>
