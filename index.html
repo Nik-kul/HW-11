@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <title>JS-hw-1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання JS</title>
 </head>
 <body>
 
-<script>
-// 1
-let result = 5 + 5 + '5';
+    <h1>Перевірте консоль браузера (F12)</h1>
 
-console.log(result);
-console.log(typeof result);
+    <script>
+        // 1. Змінна age
+        let age = 12;
+        console.log(age);
 
-// 2
-let email = 'nikitoskul17@gmail.com';
+        // 2. Змінна name
+        let name = "Nikita";
+        console.log(name);
 
-console.log(email.includes('@'));
-console.log(email.length);
+        // 3. Змінна isStudent
+        let isStudent = true;
+        console.log(isStudent);
 
-// 3
-let firstWord = 'My';
-let secondWord = 'name';
-let thirdWord = 'is';
+        // 4. Змінна myString
+        let myString = "Ніколи не здавайся!";
+        console.log(myString);
 
-let fullName = firstWord + ' ' + secondWord + ' ' + thirdWord + ' Viktor';
+        // 5. Змінна myNumber
+        let myNumber = 25;
+        myNumber = myNumber + 10;
+        console.log(myNumber);
 
-console.log(fullName);
+        // 6. Змінна myNull
+        let myNull = null;
+        console.log(myNull);
 
-// 4
-let userName = 'Олександро';
-let payment = 300;
+        // 7. Введення імені через prompt()
+        let userName = prompt("Введіть своє ім’я");
+        alert("Привіт, " + userName + "!");
+        console.log(typeof userName);
 
-alert(`Дякуємо, ${userName}! До сплати ${payment} гривень`);
-</script>
+        // 8. confirm()
+        let userAnswer = confirm("Ви дійсно хочете покинути сторінку?");
+        console.log(userAnswer);
+
+        // 9. alert() та confirm()
+        alert("Увага! Дія може бути небезпечною.");
+
+        let continueAction = confirm(
+            "Ви впевнені, що хочете продовжити?"
+        );
+
+        console.log(continueAction);
+
+        if (continueAction) {
+            alert("Дію підтверджено.");
+        } else {
+            alert("Дію скасовано.");
+        }
+    </script>
 
 </body>
 </html>
